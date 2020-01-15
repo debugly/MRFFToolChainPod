@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :text => 'MIT LICENSE' }
   s.author           = { 'qianlongxu' => 'qianlongxu@gmial.com' }
-  s.source           = { :http => "https://raw.githubusercontent.com/debugly/MRFFmpeg-Libs/master/MRFFmpegPod-iOS-#{s.version}.zip" }
+  s.source           = { :http => "https://raw.githubusercontent.com/debugly/MRFFToolChainPod/master/MRFFmpegPod-iOS-#{s.version}.zip" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
