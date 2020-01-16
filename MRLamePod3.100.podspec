@@ -6,16 +6,20 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 
-preifx='Lame'
+NAME='Lame'
+VER='3.100'
+
 Pod::Spec.new do |s|
-  s.name             = 'MRLamePod'
-  s.version          = '3.100'
-  s.summary          = 'A Pod Warper for Lame lib.'
+  s.name             = "MR#{NAME}Pod"
+  s.version          = "#{VER}"
+  s.summary          = "A Pod Warper for #{NAME} lib."
   s.description      = <<-DESC
-The pod managed iOS platform lame lib, and member of MRFFToolChain.
-What's MRFFToolChain?
-MRFFToolChain is buid for my ffmepg tutorial : https://github.com/debugly/StudyFFmpeg .
-MRFFToolChain contain FFmpeg lib, Lame lib,X264 lib,Fdk-aac lib...
+The pod is a member of MRFFToolChainPod.
+What's MRFFToolChainPod?
+MRFFToolChainPod is buid for my ffmepg tutorial : https://github.com/debugly/StudyFFmpeg .
+MRFFToolChainPod contain FFmpeg lib, Lame lib,X264 lib,Fdk-aac lib...
+Where's the build shell?
+All ToolChain lib build shell is here : https://github.com/debugly/MRFFToolChain
                        DESC
 
   s.homepage         = 'https://github.com/debugly/MRFFToolChainPod/'
@@ -24,10 +28,10 @@ MRFFToolChain contain FFmpeg lib, Lame lib,X264 lib,Fdk-aac lib...
   s.source           = { :http => "https://raw.githubusercontent.com/debugly/MRFFToolChainPod/master/#{s.name}-iOS-#{s.version}.zip" }
   s.ios.deployment_target = '8.0'
   
-  s.ios.preserve_paths = "#{s.name}/iOS/#{preifx}-#{s.version}/include"
-  s.ios.header_mappings_dir = "#{s.name}/iOS/#{preifx}-#{s.version}/include"
-  s.ios.source_files = "#{s.name}/iOS/#{preifx}-#{s.version}/include/*.h"
-  s.ios.vendored_libraries = "#{s.name}/iOS/#{preifx}-#{s.version}/lib/*.a"
-  s.ios.public_header_files = "#{s.name}/iOS/#{preifx}-#{s.version}/include/**/*.h"
+  s.ios.preserve_paths = "#{s.name}/iOS/#{NAME}-#{s.version}/include"
+  s.ios.header_mappings_dir = "#{s.name}/iOS/#{NAME}-#{s.version}/include"
+  s.ios.source_files = "#{s.name}/iOS/#{NAME}-#{s.version}/include/*.h"
+  s.ios.vendored_libraries = "#{s.name}/iOS/#{NAME}-#{s.version}/lib/*.a"
+  s.ios.public_header_files = "#{s.name}/iOS/#{NAME}-#{s.version}/include/**/*.h"
 
 end
