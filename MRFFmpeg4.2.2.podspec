@@ -92,10 +92,10 @@ All ToolChain lib build shell is here : https://github.com/debugly/MRFFToolChain
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.library = 'z', 'bz2', 'iconv', 'lzma'
   s.frameworks = 'CoreFoundation', 'CoreVideo', 'VideoToolbox', 'CoreMedia', 'AudioToolbox', 'Security'
-  other_ldflags = '$(inherited) -framework "VideoDecodeAcceleration"'
-  s.ios.xcconfig = {
-    'OTHER_LDFLAGS[arch=arm64]' => other_ldflags
-  }
+  # other_ldflags = '$(inherited) -framework "VideoDecodeAcceleration"'
+  # s.osx.xcconfig = {
+  #   'OTHER_LDFLAGS[arch=arm64]' => other_ldflags
+  # }
 
   # s.dependency 'AFNetworking', '~> 2.3'
 end
