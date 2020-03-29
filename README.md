@@ -1,5 +1,6 @@
-# MRFFmpeg-Libs
-FFmpeg pod zip file.
+# MRFFmpeg Toolchain Pods
+
+FFmpeg toolchain pod.
 
 - install MRFFmpeg4.2.2
 
@@ -30,3 +31,7 @@ pod 'MRX264Pod', :podspec => 'https://raw.githubusercontent.com/debugly/MRFFTool
 ```
 pod 'MRFdk-aacPod', :podspec => 'https://raw.githubusercontent.com/debugly/MRFFToolChainPod/master/MRFdk-aacPod2.0.1.podspec'
 ```
+
+
+如果您对如何编译 FFmpeg 工具库感兴趣，可移步这里 [MRFFToolChainBuildShell](https://github.com/debugly/MRFFToolChainBuildShell) 查看具体的编译脚本。
+
